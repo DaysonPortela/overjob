@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/formulario.css">
+
+
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- STRUCTURE -->
+  <div class="structure structure-form ">
+
+
+    <div class="header-fixe">
+      <div class="logo logo-form">
+        <div class="logo-image">
+          <img src="images/OverJobwhite.svg" alt="Logo">
+
+        </div>
+      </div>
+
+
+
+    </div>
+    <!-- Form -->
+
+    <main class="form-job">
+      <form action="" class="form-publish">
+        <label for="title">Titulo da Vaga</label>
+        <input type="text" id="title" name="title">
+
+        <div class="form-category">
+          <div class="form-card">
+            <label for="category">Categoria Principal</label>
+            <select name="category" id="category">
+              <option value="">Selecione uma Categoria</option>
+              <option value="1">Front-end</option>
+              <option value="2">Back-end</option>
+              <option value="3">Mobile</option>
+              <option value="4">QA</option>
+              <option value="5">Full-Stack</option>
+            </select>
+          </div>
+
+          <div class="form-card">
+            <label for="regime">Regime de Trabalho</label>
+            <select name="regime" id="regime">
+              <option value="">Selecione um Regime</option>
+              <option value="1">PJ</option>
+              <option value="2">CLT</option>
+              <option value="3">Frela</option>
+              <option value="4">Estagio</option>
+
+            </select>
+          </div>
+        </div>
+
+        <div class="form-category">
+          <div class="form-card">
+            <label for="level">Nivel</label>
+            <select name="level" id="level">
+              <option value="">Selecione um Nível</option>
+              <option value="1">Estagio</option>
+              <option value="2">Junior</option>
+              <option value="3">Pleno</option>
+              <option value="4">Senior</option>
+
+            </select>
+          </div>
+
+          <div class="form-card">
+            <label for="model">Modelo de trabalho</label>
+            <select name="model" id="model">
+              <option value="">Selecione um Modelo</option>
+              <option value="1">Remoto</option>
+              <option value="2">Remoto durante a pandemia</option>
+              <option value="3">Hibrido</option>
+              <option value="4">Presencial</option>
+
+            </select>
+          </div>
+        </div>
+
+        <div class="form-category">
+          <div class="form-card">
+            <label for="state">Estado</label>
+            <select name="state" id="state">
+              <option value="">Selecione um Estado</option>
+              <option value="1">SP</option>
+              <option value="2">RJ</option>
+              <option value="3">ES</option>
+              <option value="4">CE</option>
+              <option value="4">AM</option>
+              <option value="4">BA</option>
+            </select>
+          </div>
+
+          <div class="form-card">
+            <label for="City">Cidade</label>
+            <select name="City" id="City">
+              <option value="">Selecione uma Cidade</option>
+              <option value="1">Remoto</option>
+              <option value="2">Remoto durante a pandemia</option>
+              <option value="3">Hibrido</option>
+              <option value="4">Presencial</option>
+
+            </select>
+          </div>
+        </div>
+
+        <div class="form-category">
+          <div class="form-card">
+            <label for="wage">Faixa salarial</label>
+            <input type="range" name="vol" value="0" min="0" max="20000" oninput="display.value=value" onchange="display.value=value">
+          </div>
+
+          <div class="form-card">
+
+            <label for="wage">R$</label>
+            <input type="text" id="display" value="0" readonly>
+          </div>
+        </div>
+
+
+
+
+        <label for="link">Link para aplicar a vaga</label>
+        <input type="text" id="link" name="link">
+
+        <label class="area" for="description">Descrição da Vaga</label>
+        <textarea name="description" id="description" cols="50" rows="10"></textarea>
+
+
+        <div class="form-category">
+          <div class="form-card">
+            <label for="company">Nome da Empresa</label>
+            <input type="text" id="company" name="company">
+          </div>
+
+          <div class="form-card">
+
+
+            <label for="title">Email para recebimento do link da edição</label>
+            <input type="text" id="title" name="title">
+          </div>
+        </div>
+
+
+        <label class="area" for="descriptioncompany">Descrição da Vaga</label>
+        <textarea name="descriptioncompany" id="descriptioncompany" cols="50" rows="10"></textarea>
+
+        <button id="publish" name="publish" type="submit" class="publish publish-form">Publicar Vaga</button>
+
+      </form>
+    </main>
+
+
+  </div>
+</body>
+
+</html>

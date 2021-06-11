@@ -1,0 +1,131 @@
+/* BUSCA */
+.job-list-description {
+  padding: 0 3%;
+  grid-area: job-list;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 50px;
+  gap: 40px;
+  margin-top: 245px;
+}
+
+/* JOB */
+
+.card-job-description {
+  display: flex;
+  gap: 1px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px var(--color-bluesecondary);
+}
+
+.content-job-description {
+  background: var(--color-background-white);
+  padding: 30px 10% 80px 30px;
+
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.description-btn {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.content-job-description h3,
+h2 {
+  line-height: 1.8em;
+}
+
+.date-job-description {
+  background: var(--color-background-white);
+  padding: 0 5%;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.date-job-description h3,
+p {
+  margin-bottom: 7px;
+}
+
+.date-job-description h3 {
+  font-size: 1.2em;
+  margin-top: 15px;
+}
+
+.date-job-description p {
+  font-size: 1em;
+}
+
+@media (max-width: 900px) {
+  .filter {
+    display: none;
+  }
+  .job-list-description {
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+  }
+  .job {
+    margin-top: 220px;
+  }
+}
+
+@media (max-width: 650px) {
+  .job {
+    margin-top: 25px;
+  }
+
+  .card-job-description {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px var(--color-bluesecondary);
+  }
+
+  .content-job-description {
+    background: var(--color-background-white);
+    padding: 20px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .content-job-description h2 {
+    font-size: 1.4em;
+  }
+  .content-job-description h3 {
+    font-size: 1.2em;
+  }
+
+  .content-job-description p {
+    font-size: 1em;
+  }
+
+  .content-job-description h3,
+  h2 {
+    line-height: 1.3em;
+  }
+
+  .date-job-description {
+    background: var(--color-background-white);
+    padding: 5%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .date-job-description h3,
+  p {
+    margin-bottom: 2px;
+  }
+
+  .date-job-description p {
+    font-size: 1em;
+  }
+}
